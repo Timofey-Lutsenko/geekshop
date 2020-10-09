@@ -15,8 +15,12 @@ urlpatterns = [
     path("products/modern", mainapp.products, name="products_modern"),
     path("products/classic", mainapp.products, name="products_classic"),
     path("contact/", mainapp.contact, name="contact"),
+<<<<<<< HEAD
 ]
 
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+]
+>>>>>>> bafaef665a25edefe48c6f1867f1eee9addcd7ee
