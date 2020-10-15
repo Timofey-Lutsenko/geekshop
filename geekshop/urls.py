@@ -1,5 +1,4 @@
 from django.conf import settings
-from django.conf import settings
 from django.conf.urls import include
 from django.conf.urls.static import static
 from django.contrib import admin
@@ -13,6 +12,7 @@ urlpatterns = [
     path("products/", include("mainapp.urls", namespace="products")),
     path("contact/", mainapp.contact, name="contact"),
     path("auth/", include("authnapp.urls", namespace="auth")),
+    path("basket/", include("basketapp.urls", namespace="basket")),
 ]
 
 
